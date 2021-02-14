@@ -2,7 +2,9 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './index.css';
-import './styles.css';
+import './css/normalize.css';
+import './css/skeleton.css';
+import './css/styles.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 

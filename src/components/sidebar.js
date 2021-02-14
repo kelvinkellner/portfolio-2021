@@ -1,32 +1,18 @@
-import React from "react";
-import {Nav} from "react-bootstrap";
+import React from 'react';
+import { BrowserRouter as Router, Link, NavLink } from 'react-router-dom';
 
-const Side = props => {
-   
+const Sidebar = props => {
+
     return (
         <>
-            <Nav className="col-md-12 d-none d-md-block bg-light sidebar"
-            activeKey="/home"
-            onSelect={selectedKey => alert(`selected ${selectedKey}`)}
-            >
-                <div className="sidebar-sticky"></div>
-            <Nav.Item>
-                <Nav.Link href="/home">Active</Nav.Link>
-            </Nav.Item>
-            <Nav.Item>
-                <Nav.Link eventKey="link-1">Link</Nav.Link>
-            </Nav.Item>
-            <Nav.Item>
-                <Nav.Link eventKey="link-2">Link</Nav.Link>
-            </Nav.Item>
-            <Nav.Item>
-                <Nav.Link eventKey="disabled" disabled>
-                Disabled
-                </Nav.Link>
-            </Nav.Item>
-            </Nav>
-
+            <h4 className="title text-center font-weight-bold"><Link to="/">kelvin<span>_</span>kellner<span>.</span></Link></h4>
+            <ul class="menu">
+                <li><NavLink exact to="/" activeClassName="active">about me.</NavLink></li>
+                <li><NavLink exact to="/projects" activeClassName="active">projects.</NavLink></li>
+                <li><NavLink to="/hobbies" activeClassName="active">hobbies.</NavLink></li>
+                <li><NavLink to="/contact" activeClassName="active">contact.</NavLink></li>
+            </ul>
         </>
         );
   };
-  export default Side
+  export default Sidebar

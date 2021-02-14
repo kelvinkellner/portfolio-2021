@@ -1,0 +1,118 @@
+/* Colours & Appearance */
+
+:root {
+  --main-color: #0ec49d;
+  --main-color-dark: #09866b;
+  --main-color-light: #2df0c6;
+  --off-color: #39413e;
+  --off-color-dark: #090b0a;
+  --off-color-light: #55625d;
+}
+
+/* Layout & Components */
+#sidebar-wrapper {
+  min-height: 100vh;
+  width: 100vw;
+  -webkit-transition: margin 0.25s ease-out;
+  -moz-transition: margin 0.25s ease-out;
+  -o-transition: margin 0.25s ease-out;
+  transition: margin 0.25s ease-out;
+  padding: 8vh 2vw;
+}
+
+#page-content-wrapper {
+  min-width: 0;
+  width: 100%;
+}
+
+.menu {
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0;
+  margin-bottom: 8vh;
+}
+
+.menu li {
+  font-size: 2rem;
+}
+
+.menu a {
+  color: var(--off-color);
+  text-decoration: none;
+}
+
+.menu a:hover {
+  color: var(--off-color-dark);
+  text-decoration: underline;
+}
+
+.menu a:active,
+.menu a.active {
+  color: var(--main-color);
+  text-decoration: none;
+}
+
+.menu a:active:hover,
+.menu a.active:hover {
+  color: var(--main-color);
+  text-decoration: underline;
+}
+
+/* Text */
+span {
+  color: var(--main-color);
+}
+
+.title {
+  margin-bottom: 8vh;
+}
+
+.title a {
+  color: var(--off-color);
+  text-decoration: none;
+}
+.title a:hover {
+  color: var(--main-color);
+  text-decoration: none;
+}
+
+.heading {
+  font-weight: bold;
+}
+
+/* xs --- Extra small devices (portrait phones, less than 576px) */
+@media (min-width: 0px) {
+  #sidebar-wrapper {
+    padding: 8vh 4vw 2vh 4vw;
+    min-height: 40vh;
+  }
+  #page-content-wrapper {
+    padding: 2vh 4vw;
+    min-height: 60vh;
+  }
+}
+
+/* sm --- Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+}
+
+/* md --- Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+  #sidebar-wrapper {
+    padding: 8vh 4vw;
+    min-height: 100vh;
+  }
+  #page-content-wrapper {
+    padding: 8vh 2vw;
+  }
+}
+
+/* lg --- Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+}
+
+/* xl --- Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+}
