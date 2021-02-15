@@ -18,20 +18,22 @@ function App() {
                     <Sidebar />
                 </Col>
                 <Col xs={12} md={8} xl={9} id="page-content-wrapper">
-                    <Switch>
-                        <Route exact path="/">
-                            <AboutPage />
-                        </Route>
-                        <Route path="/projects">
-                            <ProjectsPage />
-                        </Route>
-                        <Route path="/hobbies">
-                            <HobbiesPage />
-                        </Route>
-                        <Route path="/contact">
-                            <ContactPage />
-                        </Route>
-                    </Switch>
+                    <Container id="page-content">
+                        <Switch>
+                            <Route exact path="/">
+                                <AboutPage />
+                            </Route>
+                            <Route path="/projects">
+                                <ProjectsPage />
+                            </Route>
+                            <Route path="/hobbies">
+                                <HobbiesPage />
+                            </Route>
+                            <Route path="/contact">
+                                <ContactPage />
+                            </Route>
+                        </Switch>
+                    </Container>
                 </Col> 
             </Row>
         </Router>
