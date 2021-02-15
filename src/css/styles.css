@@ -61,7 +61,7 @@
 }
 
 .menu.dropdown {
-  margin-bottom: 2vh;
+  margin: 2vh 0;
   height: 12rem;
   opacity: 1;
   transition: all 0.5s ease-in-out;
