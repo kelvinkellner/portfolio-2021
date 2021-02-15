@@ -1,6 +1,6 @@
 import React from 'react';
 
-function Hobbies() {
+function HobbiesPage() {
     return (
         <>
             <h4 className="heading">hobbies<span>.</span></h4>
@@ -8,4 +8,4 @@ function Hobbies() {
     );
 }
 
-export default Hobbies;
+export default HobbiesPage;

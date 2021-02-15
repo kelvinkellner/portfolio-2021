@@ -9,11 +9,11 @@ const Sidebar = props => {
     }
     return (
         <>
-            <h4 className="title text-center font-weight-bold"><Link exact to="/">kelvin<span>_</span>kellner<span>.</span></Link></h4>
-            <ul class="menu">
+            <h4 className="title text-center font-weight-bold"><Link to="/">kelvin<span>_</span>kellner<span>.</span></Link></h4>
+            <ul className="menu">
                 <li><NavLink exact to="/" activeClassName="active">about me<span>.</span></NavLink></li>
-                <li><Link onClick={ e => handleDropdownCollapse(e) }>projects<span>.</span></Link></li>
-                <ul class={`menu dropdown${isDropdownCollapsed ? ' collapse' : ''}`}>
+                <li><a href="/_/" onClick={ e => handleDropdownCollapse(e) }>projects<span>.</span></a></li>
+                <ul className={`menu dropdown${isDropdownCollapsed ? ' collapse' : ''}`}>
                     <li>ux design<span>.</span></li>
                     <li>development<span>.</span></li>
                     <li>graphic design<span>.</span></li>

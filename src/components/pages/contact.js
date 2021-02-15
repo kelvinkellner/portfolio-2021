@@ -6,7 +6,7 @@ import bg from '../../assets/bg-flowersky.JPG'
 function ContactPage() {
     return (
         <>
-            <Image className="strip" src={bg} />
+            <Image className="strip" src={bg} alt="banner image of pink flowers surrounded by a blue sky with clouds" />
             <h4 className="heading">contact me<span>.</span></h4>
         </>
     );
