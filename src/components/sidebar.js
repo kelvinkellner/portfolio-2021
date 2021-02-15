@@ -16,7 +16,7 @@ const Sidebar = props => {
                 <ul class={`menu dropdown${isDropdownCollapsed ? ' collapse' : ''}`}>
                     <li>ux design.</li>
                     <li>software development.</li>
-                    <li>graphic design.</li>
+                    <li>graphic design. and stuff</li>
                 </ul>
                 <li><NavLink to="/hobbies" activeClassName="active">hobbies.</NavLink></li>
                 <li><NavLink to="/contact" activeClassName="active">contact.</NavLink></li>
