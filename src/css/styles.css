@@ -120,6 +120,22 @@ img {
   height: 10rem;
 }
 
+/* Forms */
+
+label {
+  color: var(--off-color);
+}
+
+.main-color-button {
+  background-color: var(--main-color);
+  border-color: var(--main-color);
+}
+
+.main-color-button:hover {
+  background-color: var(--main-color-dark);
+  border-color: var(--main-color-dark);
+}
+
 /* Media Screen Adjustments */
 
 /* xs --- Extra small devices (portrait phones, less than 576px) */
