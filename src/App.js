@@ -1,8 +1,7 @@
 import './App.css';
 import React from "react";
-import {Container, Row, Col } from "react-bootstrap";
+import { Container, Row, Col } from "react-bootstrap";
 import { Route, BrowserRouter as Router, Switch } from 'react-router-dom';
-import dotenv from './dotenv';
 
 import Sidebar from './components/Sidebar';
 import AboutPage from './components/pages/About';
@@ -11,7 +10,6 @@ import ProjectsPage from './components/pages/Projects';
 import ContactPage from './components/pages/Contact';
 
 function App() {
-    dotenv();
     return (
         <Container fluid>
             <Router>
