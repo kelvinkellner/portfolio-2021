@@ -1,5 +1,6 @@
 import React from 'react';
-import { Image } from 'react-bootstrap';
+
+import Image from 'react-bootstrap/Image';
 
 function AboutPage() {
     return (

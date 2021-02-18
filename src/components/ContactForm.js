@@ -1,6 +1,9 @@
 import React, { useState } from 'react';
-import { Button, Col, Form } from 'react-bootstrap';
-import emailjs, { init } from 'emailjs-com';
+import emailjs from 'emailjs-com';
+
+import Button from 'react-bootstrap/Button';
+import Col from 'react-bootstrap/Col';
+import Form from 'react-bootstrap/Form';
 
 const ContactForm = () => {
     const [validated, setValidated] = useState(false);

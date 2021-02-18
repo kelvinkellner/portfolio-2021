@@ -120,6 +120,12 @@ img {
   height: 10rem;
 }
 
+.dropdown-arrow {
+  padding: 4px;
+  margin-right: 4px;
+  margin-left: -4px;
+}
+
 /* Forms */
 
 label {

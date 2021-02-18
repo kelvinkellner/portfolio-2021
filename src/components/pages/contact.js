@@ -1,5 +1,6 @@
 import React from 'react';
-import { Image } from 'react-bootstrap';
+
+import Image from 'react-bootstrap/Image';
 
 import bg from '../../assets/bg-flowersky.JPG'
 
