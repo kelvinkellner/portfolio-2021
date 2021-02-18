@@ -34,6 +34,7 @@ const ContactForm = () => {
             console.log(data);
             console.log(form);
             console.log(templateParams);
+            setStatus(-1);
             // await emailjs.send(
             //     process.env.REACT_APP_SERVICE_ID,
             //     process.env.REACT_APP_TEMPLATE_ID,
@@ -54,17 +55,16 @@ const ContactForm = () => {
     };
 
     const alert = () => {
-        if(status===1) {
+        if(status===1 || status===-1) {
             return (
-                <Alert variant="success" style={{padding: "2rem", marginBottom:"2rem"}} onClose={() => setStatus(0)} dismissible>
-                    <Alert.Heading className="font-weight-bold">Your message was sent successfully!</Alert.Heading>
-                    <p style={{marginBottom: 0}}>Thank you for taking the time to contact me, I will get back to you as soon as I can.</p>
-                </Alert>)
-        } else if(status===-1) {
-            return (
-                <Alert variant="danger" onClose={() => setStatus(0)} dismissible>
-                    <Alert.Heading>Your message failed to send!</Alert.Heading>
-                    <p>Feel free to contact me on social media, and I will fix this issue as soon as I can. Sorry about that!</p>
+                <Alert variant={status===1 ? "success" : "danger"} style={{padding: "2rem", marginBottom:"2rem"}} onClose={() => setStatus(0)} dismissible>
+                    <Alert.Heading className="font-weight-bold">
+                        {status===1 ? "Your message was sent successfully!" : "Your message failed to send!"}
+                        </Alert.Heading>
+                    <p style={{marginBottom: 0}}>
+                        {status===1 ? "Thank you for taking the time to contact me, I will get back to you as soon as I can."
+                        : "Feel free to contact me on social media and I will fix this issue as soon as I can. Sorry about that!"}
+                        </p>
                 </Alert>)
         } else return;
     }
