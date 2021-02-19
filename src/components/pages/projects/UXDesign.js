@@ -24,10 +24,10 @@ function UXDesignPage() {
 
             <Row className="panel-gallery">
                 {panels.map((p) =>
-                <Col xs={12} md={6}>
+                <Col xs={12} md={6} className="panel-item">
                     <div className="panel-item">
                         <Image className="panel" src={p[0]} alt={p[1]} />
-                        <Container fluid>
+                        <Container fluid className="panel-text">
                             <h4>Project Title</h4>
                             <h5>Role in Project</h5>
                             <p>One-liner explaination</p>

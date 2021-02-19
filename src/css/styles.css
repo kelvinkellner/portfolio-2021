@@ -136,11 +136,13 @@ img {
   box-shadow: 8px 8px 0 var(--main-color);
   transition: border-radius 0.2s, box-shadow 0.6s;
 }
-
-.panel-item {
+.panel-text {
+  position: relative;
+  transform: translate(0, -25rem);
   display: flex;
-  justify-content: center;
+  flex-direction: column;
   align-items: center;
+  height: 0;
 }
 
 .dropdown-arrow {
