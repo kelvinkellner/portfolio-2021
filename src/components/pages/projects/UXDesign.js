@@ -24,7 +24,7 @@ function UXDesignPage() {
 
             <Row className="panel-gallery">
                 {panels.map((p) =>
-                <Col xs={12} md={6} className="panel-item">
+                <Col xs={12} md={6} className="panel">
                     <div className="panel-item">
                         <Image className="panel" src={p[0]} alt={p[1]} />
                         <Container fluid className="panel-text">
