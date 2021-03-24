@@ -7,6 +7,7 @@ import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 
 import Sidebar from './components/Sidebar';
+import HomePage from './components/pages/Home';
 import AboutPage from './components/pages/About';
 import HobbiesPage from './components/pages/Hobbies';
 import ProjectsPage from './components/pages/Projects';
@@ -27,6 +28,9 @@ function App() {
                         <Container id="page-content">
                             <Switch>
                                 <Route exact path="/">
+                                    <HomePage />
+                                </Route>
+                                <Route path="/about">
                                     <AboutPage />
                                 </Route>
                                 <Route path="/projects">
@@ -38,7 +42,7 @@ function App() {
                                     <Route path="/dev">
                                         <DevelopmentPage />
                                     </Route>
-                                    <Route path="/gd">
+                                    <Route path="/graphics">
                                         <GraphicDesignPage />
                                     </Route>
                                 <Route path="/hobbies">
@@ -52,8 +56,7 @@ function App() {
                     </Col> 
                 </Row>
             </Router>
-
-            </Container>
+        </Container>
         );
 }
 

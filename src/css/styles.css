@@ -85,6 +85,10 @@
   font-size: 1.8rem;
 }
 
+#welcome-strip {
+  margin-top: 2rem;
+}
+
 /* Text */
 span {
   color: var(--main-color);
